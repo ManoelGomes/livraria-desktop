@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="373.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AutorFormularioController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: #0000A7;">
+         <children>
+            <Label layoutX="24.0" layoutY="15.0" text="Cadastro de Autores" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="52.0" layoutY="93.0" text="Nome" />
+      <Label layoutX="52.0" layoutY="155.0" text="E-mail" />
+      <TextField fx:id="txfNome" layoutX="128.0" layoutY="88.0" />
+      <TextField fx:id="txfEmail" layoutX="128.0" layoutY="150.0" />
+      <Button fx:id="btnSalvar" layoutX="183.0" layoutY="215.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+   </children>
+</AnchorPane>
