@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+    <children>
+        <MenuBar fx:id="MenuLivraria">
+            <menus>
+                <Menu mnemonicParsing="false" text="Municipios">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Autores">
+                    <items>
+                        <MenuItem fx:id="menuitemAutorAutores" mnemonicParsing="false" onAction="#menuitemAutores" text="Opcoes" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Estados">
+                    <items>
+                        <MenuItem fx:id="menuitemAutorListar" mnemonicParsing="false" text="Listar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Editoras">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="anchorPane" prefHeight="377.0" prefWidth="600.0" />
+    </children>
+</VBox>
