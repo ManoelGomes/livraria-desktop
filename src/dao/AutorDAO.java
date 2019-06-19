@@ -3,7 +3,6 @@ package dao;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.Autor;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,7 +24,6 @@ public class AutorDAO {
     }
 
     public void inserir(Autor autor){
-
         String sql = "insert into autores (nome, email) values (?, ?)";
 
 

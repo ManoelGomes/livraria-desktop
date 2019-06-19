@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="554.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
    <children>
-      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="93.0" prefWidth="663.0" style="-fx-background-color: #0000A7;" AnchorPane.bottomAnchor="462.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="800.0" prefWidth="663.0" style="-fx-background-color: #0000A7;" AnchorPane.bottomAnchor="462.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
          <children>
             <Label layoutX="250.0" layoutY="33.0" text="Cadastro de Autores" textFill="WHITE">
                <font>
@@ -24,7 +24,7 @@
       <Label layoutX="286.0" layoutY="114.0" text="E-mail" />
       <TextField fx:id="txfNome" layoutX="99.0" layoutY="110.0" />
       <TextField fx:id="txfEmail" layoutX="332.0" layoutY="110.0" />
-      <Button fx:id="btnCadastrar" layoutX="513.0" layoutY="110.0" mnemonicParsing="false" onAction="#cadastrar" text="Salvar" />
+      <Button fx:id="btnSalvar" layoutX="513.0" layoutY="110.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
       <TableView fx:id="tableViewAutor" layoutX="7.0" layoutY="246.0" prefHeight="224.0" prefWidth="646.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="246.0">
          <columns>
             <TableColumn fx:id="tablecolumnID" prefWidth="75.0" text="ID" />
@@ -43,4 +43,3 @@
       <Button fx:id="btnAlterar" layoutX="572.0" layoutY="204.0" mnemonicParsing="false" onAction="#Alterar" text="Alterar" />
    </children>
 </AnchorPane>
-

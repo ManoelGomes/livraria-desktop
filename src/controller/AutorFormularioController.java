@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 
 
 
-public class AutorFormularioController implements Initializable{
+public class AutorFormularioController {
 
     @FXML private TableView<Autor> tableViewAutor = new TableView<>();
     @FXML private TableColumn<Autor, Integer> tablecolumnID = new TableColumn<>();
@@ -33,10 +33,12 @@ public class AutorFormularioController implements Initializable{
     @FXML private Button btnAlterar;
 
 
+
+
     Autor autor = new Autor();
     AutorDAO autorDAO = new AutorDAO();
 
-    public void Listar(){
+   public void Listar(){
         List<Autor> listAutor;
         ObservableList<Autor> autorObservableList;
 
@@ -53,14 +55,19 @@ public class AutorFormularioController implements Initializable{
 
     }
 
-    public void cadastrar(){
+    public void salvar(){
+
         //TODO: verificar se esta imprimindo no console
         System.out.println("Nome: " + txfNome.getText());
         System.out.println("Email: " + txfEmail.getText());
 
 
+
+
         autor.setNome(txfNome.getText());
         autor.setEmail(txfEmail.getText());
+
+        autorDAO.inserir(autor);
 
 
 
@@ -81,11 +88,11 @@ public class AutorFormularioController implements Initializable{
     }
 
 
-    @Override
+ /*   @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //carregarTableViewAutor();
+        carregarTableViewAutor();
     }
- /*   public void carregarTableViewAutor(){
+    public void carregarTableViewAutor(){
 
         tablecolumnID.setCellValueFactory(new PropertyValueFactory<>("id"));
         tablecolumnNOME.setCellValueFactory(new PropertyValueFactory<>("nome"));
